@@ -14,15 +14,15 @@ THEANO_WEIGHTS_PATH_NO_TOP = 'https://github.com/fchollet/deep-learning-models/r
 TF_WEIGHTS_PATH_NO_TOP = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5'
 
 # content, style, and result image info
-base_image_path = "<path to base image>"
-style_reference_image_path = "<path to style image>"
+base_image_path = "face/content/8.png"
+style_reference_image_path = "face/style/cropped_CFD-BM-033-003-N_2048FC.png"
 
 # hyperparameters
-num_iter = 50
+num_iter = 100
 rescale_image = True
 maintain_aspect_ratio = True
 preserve_color = False
-pooltype = "max"  # max or ave
+pooltype = "ave"  # max or ave
 
 # weights of the different loss components
 total_variation_weight = 8.5e-5
