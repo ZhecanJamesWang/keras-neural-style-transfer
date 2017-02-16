@@ -1,0 +1,4 @@
+*.npy
+*.pyc
+.DS_Store
+result/
